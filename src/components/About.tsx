@@ -1,11 +1,12 @@
 import { FC, memo } from "react";
+import SectionHeading from "./SectionHeading";
 
 type AboutProps = {};
 
 const About: FC<AboutProps> = () => {
   return (
     <section className="flex flex-col gap-8">
-      <h2 className="section-heading">About me</h2>
+      <SectionHeading heading="About me" />
       <div className="flex flex-col gap-6">
         <p className="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
