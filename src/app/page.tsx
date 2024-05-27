@@ -1,11 +1,11 @@
-import About from "@/components/About";
+import About from "@/components/Sections/About";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
-import Skills from "@/components/Skills";
+import Skills from "@/components/Sections/Skills";
 
 export default function Home() {
   return (
-    <div className="w-[1000px]">
+    <div className="w-[1000px] my-12">
       <Menu />
       <Header />
 

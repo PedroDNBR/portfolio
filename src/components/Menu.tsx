@@ -5,7 +5,7 @@ type MenuProps = {};
 
 const Menu: FC<MenuProps> = () => {
   return (
-    <nav className="mt-12">
+    <nav>
       <ul className="w-100 text-gray-50 flex justify-center gap-4">
         <MenuItem href="/">Home</MenuItem>
         <MenuItem href="#about">About</MenuItem>

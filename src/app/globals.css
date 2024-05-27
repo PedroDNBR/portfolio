@@ -32,6 +32,9 @@ body {
 }
 
 @layer components {
+  .section {
+    @apply flex flex-col gap-8;
+  }
   .paragraph {
     @apply leading-7;
   }
