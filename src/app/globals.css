@@ -30,3 +30,13 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .section-heading {
+    @apply text-3xl font-bold;
+  }
+
+  .paragraph {
+    @apply leading-7;
+  }
+}
