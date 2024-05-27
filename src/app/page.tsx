@@ -1,10 +1,12 @@
+import Header from "@/components/Header";
 import Menu from "@/components/Menu";
 import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <Fragment>
+    <div className="w-[1000px]">
       <Menu />
-    </Fragment>
+      <Header />
+    </div>
   );
 }

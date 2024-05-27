@@ -19,6 +19,10 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #151718;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
 }
 
 @layer utilities {
