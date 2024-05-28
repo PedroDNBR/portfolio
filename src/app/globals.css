@@ -38,4 +38,7 @@ body {
   .paragraph {
     @apply leading-7;
   }
+  .link {
+    @apply text-red-500 hover:underline cursor-pointer;
+  }
 }

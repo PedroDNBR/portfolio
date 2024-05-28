@@ -21,7 +21,7 @@ const Project: FC<ProjectProps> = ({ title, excerpt, image }) => {
       <div className="flex flex-col gap-2">
         <span className="font-bold text-lg">{title}</span>
         <p className="paragraph">{excerpt}</p>
-        <a className="text-red-500 hover:underline cursor-pointer">Show more</a>
+        <a className="link">Show more</a>
       </div>
     </div>
   );

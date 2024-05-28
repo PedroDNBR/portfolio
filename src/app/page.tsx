@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Menu from "@/components/Menu";
 import Skills from "@/components/Sections/Skills";
 import Projects from "@/components/Sections/Projects";
+import WorkXP from "@/components/Sections/WorkXP";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <WorkXP />
       </main>
     </div>
   );
