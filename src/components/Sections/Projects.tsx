@@ -1,8 +1,9 @@
 import { FC, memo } from "react";
 import SectionHeading from "../SectionHeading";
 import Project from "../Project";
-import theTowerOfGolem from "../../../public/images/ttog_menu.png";
-import whacAMole from "../../../public/images/wam_menu.png";
+
+import theTowerOfGolem from "../../../public/images/projects/ttog/ttog_menu.png";
+import whacAMole from "../../../public/images/projects/wam/wam_menu.png";
 
 type ProjectsProps = {};
 

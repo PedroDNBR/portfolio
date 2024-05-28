@@ -6,7 +6,7 @@ import Projects from "@/components/Sections/Projects";
 
 export default function Home() {
   return (
-    <div className="w-[1000px] my-12">
+    <div className="max-w-[950px] my-12 px-4">
       <Menu />
       <Header />
 
