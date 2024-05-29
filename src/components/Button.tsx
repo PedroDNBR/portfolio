@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
-import { Slot } from "@radix-ui/react-slot";
+import { Slot, Slottable } from "@radix-ui/react-slot";
 import { VariantProps, cva } from "class-variance-authority";
 import { forwardRef, memo } from "react";
 import { IconType } from "react-icons";
 
 const buttonVariants = cva(
-  "px-8 font-medium flex items-center gap-2 py-4 rounded-full border-2 border-white-500",
+  "px-8 font-medium flex items-center gap-2 py-4 rounded-full border-2 border-white-500 w-fit",
   {
     variants: {
       variant: {
@@ -44,7 +44,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
   return (
     <Comp className={cn(buttonVariants({ variant }))} ref={ref} {...props}>
       {!!StartIcon && <StartIcon size={iconSize} />}
-      {children}
+      <Slottable>{children}</Slottable>
       {!!EndIcon && <EndIcon size={iconSize} />}
     </Comp>
   );

@@ -4,6 +4,7 @@ import Menu from "@/components/Menu";
 import Skills from "@/components/Sections/Skills";
 import Projects from "@/components/Sections/Projects";
 import WorkXP from "@/components/Sections/WorkXP";
+import Contact from "@/components/Sections/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <WorkXP />
+        <Contact />
       </main>
     </div>
   );
