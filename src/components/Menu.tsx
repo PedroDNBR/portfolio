@@ -10,8 +10,8 @@ const Menu: FC<MenuProps> = () => {
         <MenuItem href="#about">About</MenuItem>
         <MenuItem href="#skills">Skills</MenuItem>
         <MenuItem href="#projects">Projects</MenuItem>
-        <MenuItem href="#projects">Work XP</MenuItem>
-        <MenuItem href="#projects">{`Let's talk`}</MenuItem>
+        <MenuItem href="#workxp">Work XP</MenuItem>
+        <MenuItem href="#contact">{`Let's talk`}</MenuItem>
       </ul>
     </nav>
   );

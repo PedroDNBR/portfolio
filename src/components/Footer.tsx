@@ -1,3 +1,4 @@
+import { config } from "@/config";
 import { FC, memo } from "react";
 import { RiArrowUpLine } from "react-icons/ri";
 
@@ -24,9 +25,11 @@ const Footer: FC<FooterProps> = () => {
         <div>
           <a
             className="muted-link"
-            href="https://github.com/PedroDNBR/resume"
+            href={config.footer.resumeUrl}
             target="_blank"
-          >{`Resume`}</a>
+          >
+            {`Resume`}
+          </a>
         </div>
       </div>
     </div>

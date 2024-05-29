@@ -1,14 +1,11 @@
-import Image, { StaticImageData } from "next/image";
+import { Project as ProjectType } from "@/types/project";
+import Image from "next/image";
 import { FC, memo } from "react";
 import { RiCursorLine } from "react-icons/ri";
 
-type ProjectProps = {
-  title: string;
-  excerpt: string;
-  image: StaticImageData;
-};
+type ProjectProps = ProjectType;
 
-const Project: FC<ProjectProps> = ({ title, excerpt, image }) => {
+const Project: FC<ProjectProps> = ({ title, excerpt, coverImage }) => {
   return (
     <div>
       <div className="group mb-4 relative overflow-hidden rounded">
@@ -16,11 +13,11 @@ const Project: FC<ProjectProps> = ({ title, excerpt, image }) => {
           <RiCursorLine size={24} />
           Click to show more
         </span>
-        <Image src={image} alt={title} />
+        <Image src={coverImage} alt={title} />
       </div>
       <div className="flex flex-col gap-2">
         <span className="font-bold text-lg">{title}</span>
-        <p className="paragraph">{excerpt}</p>
+        <p className="paragraph line-clamp-3">{excerpt}</p>
         <a className="link">Show more</a>
       </div>
     </div>

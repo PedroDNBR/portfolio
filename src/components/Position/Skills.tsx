@@ -1,5 +1,6 @@
 "use client";
 
+import { config } from "@/config";
 import { FC, memo, useMemo, useState } from "react";
 import { RiBriefcase2Line } from "react-icons/ri";
 
@@ -7,8 +8,7 @@ type SkillsProps = {
   skills: string[];
 };
 
-// TO-DO: Make this configurable
-const maxSkills = 4;
+const maxSkills = config.workxp.maxSkillsToShow;
 
 const Skills: FC<SkillsProps> = ({ skills }) => {
   const [isExpanded, setIsExpanded] = useState(false);

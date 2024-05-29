@@ -1,17 +1,9 @@
 import { FC, memo } from "react";
-import Responsability from "./Responsability";
 import Skills from "./Skills";
 import Description from "./Description";
+import { Position as PositionType } from "@/types/position";
 
-type PositionProps = {
-  company: string;
-  position: string;
-  description: string;
-  responsabilities: string[];
-  skills: string[];
-  startDate: string;
-  endDate: string;
-};
+type PositionProps = PositionType;
 
 const Position: FC<PositionProps> = ({
   company,

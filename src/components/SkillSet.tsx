@@ -1,9 +1,7 @@
+import { SkillSet as SkillSetType } from "@/types/skillSet";
 import { FC, memo } from "react";
 
-type SkillSetProps = {
-  title: string;
-  skills: string[];
-};
+type SkillSetProps = SkillSetType;
 
 const SkillSet: FC<SkillSetProps> = ({ title, skills }) => {
   return (
