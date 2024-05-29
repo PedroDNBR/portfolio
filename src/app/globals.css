@@ -41,4 +41,7 @@ body {
   .link {
     @apply text-red-500 hover:underline cursor-pointer leading-7;
   }
+  .muted-link {
+    @apply text-zinc-500 font-medium hover:underline;
+  }
 }
