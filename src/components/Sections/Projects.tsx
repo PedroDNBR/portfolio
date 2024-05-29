@@ -9,7 +9,7 @@ type ProjectsProps = {};
 
 const Projects: FC<ProjectsProps> = () => {
   return (
-    <section className="section">
+    <section className="section" id="projects">
       <SectionHeading
         heading="Projects"
         subheading="These are some of the awesome places I have been able to contribute to and make things happen"

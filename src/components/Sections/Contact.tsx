@@ -8,7 +8,7 @@ type ContactProps = {};
 
 const Contact: FC<ContactProps> = () => {
   return (
-    <section className="section">
+    <section className="section" id="contact">
       <SectionHeading heading="Let's talk" />
       <p className="paragraph">
         {`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec.`}

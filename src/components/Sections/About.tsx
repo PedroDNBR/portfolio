@@ -5,7 +5,7 @@ type AboutProps = {};
 
 const About: FC<AboutProps> = () => {
   return (
-    <section className="section">
+    <section className="section" id="about">
       <SectionHeading heading="About me" />
       <div className="flex flex-col gap-6">
         <p className="paragraph">

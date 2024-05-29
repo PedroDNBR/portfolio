@@ -7,12 +7,11 @@ const Menu: FC<MenuProps> = () => {
   return (
     <nav>
       <ul className="w-100 text-gray-50 flex justify-center gap-4">
-        <MenuItem href="/">Home</MenuItem>
         <MenuItem href="#about">About</MenuItem>
+        <MenuItem href="#skills">Skills</MenuItem>
         <MenuItem href="#projects">Projects</MenuItem>
-        <MenuItem href="https://github.com/pedrodnbr" target="_blank">
-          GitHub
-        </MenuItem>
+        <MenuItem href="#projects">Work XP</MenuItem>
+        <MenuItem href="#projects">{`Let's talk`}</MenuItem>
       </ul>
     </nav>
   );

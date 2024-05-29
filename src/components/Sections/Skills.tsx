@@ -6,7 +6,7 @@ type SkillsProps = {};
 
 const Skills: FC<SkillsProps> = () => {
   return (
-    <section className="section">
+    <section className="section" id="skills">
       <SectionHeading heading="Skills" />
 
       <div className="flex gap-32">

@@ -6,7 +6,7 @@ type WorkXPProps = {};
 
 const WorkXP: FC<WorkXPProps> = () => {
   return (
-    <section className="section">
+    <section className="section" id="workxp">
       <SectionHeading
         heading="Work XP"
         subheading="These are some of the awesome places I have been able to contribute to and make things happen"

@@ -1,6 +1,7 @@
 import { FC, memo } from "react";
 import Button from "./Button";
 import { RiArrowRightLine } from "react-icons/ri";
+import Link from "next/link";
 
 type HeaderProps = {};
 
@@ -17,8 +18,12 @@ const Header: FC<HeaderProps> = () => {
       </h1>
 
       <div className="flex gap-4 mt-8">
-        <Button variant="outline">See projects</Button>
-        <Button endIcon={RiArrowRightLine}>{`Let's talk`}</Button>
+        <Button asChild variant="outline">
+          <Link href="#projects">{`See projects`}</Link>
+        </Button>
+        <Button asChild endIcon={RiArrowRightLine}>
+          <Link href="#contact">{`Let's talk`}</Link>
+        </Button>
       </div>
     </header>
   );
