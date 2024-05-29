@@ -1,6 +1,7 @@
-import { FC, ReactNode, memo, useMemo } from "react";
+import { FC, Fragment, ReactNode, memo, useMemo } from "react";
 import { RiBriefcase2Line } from "react-icons/ri";
 import Responsability from "./Sections/Responsability";
+import PositionSkills from "./PositionSkills";
 
 type PositionProps = {
   company: string;
@@ -12,8 +13,6 @@ type PositionProps = {
   endDate: string;
 };
 
-const maxSkills = 4;
-
 const Position: FC<PositionProps> = ({
   company,
   position,
@@ -23,25 +22,12 @@ const Position: FC<PositionProps> = ({
   startDate,
   endDate,
 }) => {
-  const skillsString = useMemo(() => {
-    if (skills.length > maxSkills) {
-      return `${skills.slice(0, maxSkills).join(", ")} and +${
-        skills.length - maxSkills
-      } more.`;
-    }
-
-    return new Intl.ListFormat("en-GB", {
-      style: "long",
-      type: "conjunction",
-    }).format(skills);
-  }, [skills]);
-
   return (
     <div className="flex flex-col gap-4">
       <span className="font-bold text-lg block">
         <span className="text-red-500">{company}</span> — {position}
       </span>
-      <div className="relative">
+      <div className="relative line-clamp-3">
         <p className="paragraph">{description}</p>
         {/* <a
           style={{
@@ -58,10 +44,7 @@ const Position: FC<PositionProps> = ({
           ))}
         </ul>
       </div>
-      <span className="flex gap-3 font-bold">
-        <RiBriefcase2Line size={24} />
-        {skillsString}
-      </span>
+      <PositionSkills skills={skills} />
       <span className="text-zinc-500 font-medium">
         {startDate} - {endDate}
       </span>
