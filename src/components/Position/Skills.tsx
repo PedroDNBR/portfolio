@@ -3,13 +3,14 @@
 import { FC, memo, useMemo, useState } from "react";
 import { RiBriefcase2Line } from "react-icons/ri";
 
-type PositionSkillsProps = {
+type SkillsProps = {
   skills: string[];
 };
 
+// TO-DO: Make this configurable
 const maxSkills = 4;
 
-const PositionSkills: FC<PositionSkillsProps> = ({ skills }) => {
+const Skills: FC<SkillsProps> = ({ skills }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const skillsString = useMemo(() => {
@@ -44,4 +45,4 @@ const PositionSkills: FC<PositionSkillsProps> = ({ skills }) => {
   );
 };
 
-export default memo(PositionSkills);
+export default memo(Skills);
