@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="max-w-[950px] my-12 px-4">
+    <div className="max-w-[950px] my-12 px-4 mx-auto">
       <Menu />
       <Header />
 
