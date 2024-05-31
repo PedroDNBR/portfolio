@@ -8,8 +8,8 @@ type HeaderProps = {};
 
 const Header: FC<HeaderProps> = () => {
   return (
-    <header className="flex flex-col items-center my-16 md:my-[150px]">
-      <p className="text-center mb-2 text-sm md:text-base md:mb-0">
+    <header className="flex flex-col items-center my-14 md:my-[150px]">
+      <p className="text-center leading-7 mb-2 text-xs md:text-base md:mb-0">
         {config.header.presentation}
       </p>
       <h1 className="text-3xl leading-[3rem] text-center md:text-5xl md:leading-[4.875rem]">
