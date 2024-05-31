@@ -14,7 +14,7 @@ export default [
     get description() {
       return (
         <Fragment>
-          <p className="paragraph mb-7">
+          <p className="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
             lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris
             eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer
@@ -23,15 +23,13 @@ export default [
             porttitor diam ultrices malesuada. Phasellus convallis, dolor eget
             venenatis cursus, turpis erat auctor metus, at tincidunt
           </p>
-          <p className="paragraph mb-7">
+          <p className="paragraph">
             Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi
             porttitor diam ultrices malesuada. Phasellus convallis, dolor eget
             venenatis cursus, turpis erat auctor metus, at tincidunt
           </p>
-          <div className="flex flex-col gap-6 mb-8">
-            <Image src={theTowerOfGolem} alt={this.title} />
-            <Image src={theTowerOfGolem} alt={this.title} />
-          </div>
+          <Image src={theTowerOfGolem} alt={this.title} />
+          <Image src={theTowerOfGolem} alt={this.title} />
           <p className="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
             lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris

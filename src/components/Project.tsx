@@ -7,7 +7,6 @@ import { RiArrowRightLine, RiCursorLine } from "react-icons/ri";
 import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./Dialog";
 import Button from "./Button";
 import Link from "next/link";
-import slugify from "slugify";
 
 type ProjectProps = ProjectType;
 
@@ -44,7 +43,7 @@ const Project: FC<ProjectProps> = ({
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
         <DialogContent className="max-h-[75vh] overflow-y-auto">
           <DialogHeader className="text-lg font-bold">{title}</DialogHeader>
-          <div key={slugify(title)}>{description}</div>
+          <div className="flex flex-col gap-6">{description}</div>
 
           <DialogFooter>
             {!!sourceCodeUrl && (
