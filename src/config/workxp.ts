@@ -18,7 +18,7 @@ export default {
         ".NET Framework",
         "React.js",
         "Node.js",
-        "AWS Lambdas",
+        "AWS Lambda",
       ],
       startDate: "May 2023",
       endDate: "Present",

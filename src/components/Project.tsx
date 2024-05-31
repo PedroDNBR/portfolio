@@ -27,7 +27,12 @@ const Project: FC<ProjectProps> = ({
         case "image":
           return <Image src={item.src} alt={title} />;
         case "paragraph":
-          return <p className="paragraph">{item.content}</p>;
+          return (
+            <p
+              className="paragraph"
+              dangerouslySetInnerHTML={{ __html: item.content }}
+            />
+          );
         case "video":
           return (
             <iframe

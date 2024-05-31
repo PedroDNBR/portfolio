@@ -22,7 +22,7 @@ export default {
     {
       type: "paragraph",
       content:
-        "Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi porttitor diam ultrices malesuada. Phasellus convallis, dolor eget venenatis cursus, turpis erat auctor metus, at tincidunt",
+        "Maecenas <strong>iaculis</strong> tempor tortor a venenatis. Etiam gravida mi porttitor diam ultrices malesuada. Phasellus convallis, dolor eget venenatis cursus, turpis erat auctor metus, at tincidunt",
     },
     { type: "image", src: ttogMenu },
     { type: "image", src: ttogControls },
