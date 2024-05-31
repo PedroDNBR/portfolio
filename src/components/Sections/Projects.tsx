@@ -11,9 +11,8 @@ const Projects: FC<ProjectsProps> = () => {
     <section className="section" id="projects">
       <SectionHeading
         heading="Projects"
-        subheading="These are some of the awesome places I have been able to contribute to and make things happen"
+        subheading="I have independently developed several awesome projects from start to finish. Some of these include:"
       />
-
       <div className="grid md:grid-cols-2 gap-8">
         {config.projects.map((project, index) => (
           <Project key={index} {...project} />
