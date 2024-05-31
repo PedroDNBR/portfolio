@@ -11,35 +11,31 @@ export default [
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec.",
     coverImage: theTowerOfGolem,
-    get description() {
-      return (
-        <Fragment>
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-            lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris
-            eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer
-            magna elit, eleifend bibendum tincidunt in, tristique eget quam.
-            Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi
-            porttitor diam ultrices malesuada. Phasellus convallis, dolor eget
-            venenatis cursus, turpis erat auctor metus, at tincidunt
-          </p>
-          <p className="paragraph">
-            Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi
-            porttitor diam ultrices malesuada. Phasellus convallis, dolor eget
-            venenatis cursus, turpis erat auctor metus, at tincidunt
-          </p>
-          <Image src={theTowerOfGolem} alt={this.title} />
-          <Image src={theTowerOfGolem} alt={this.title} />
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-            lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris
-            eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer
-            magna elit, eleifend bibendum tincidunt in, tristique eget quam.
-            Maecenas iaculis tempor tortor a venenatis.
-          </p>
-        </Fragment>
-      );
-    },
+    description: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/uG_hNF3rjnQ?si=DHGV-KHw3lTLFFlO&cc_load_policy=1&cc_lang_pref=en",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer magna elit, eleifend bibendum tincidunt in, tristique eget quam. Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi porttitor diam ultrices malesuada. Phasellus convallis, dolor eget venenatis cursus, turpis erat auctor metus, at tincidunt",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi porttitor diam ultrices malesuada. Phasellus convallis, dolor eget venenatis cursus, turpis erat auctor metus, at tincidunt",
+      },
+      {
+        type: "image",
+        src: theTowerOfGolem,
+      },
+      {
+        type: "paragraph",
+        content:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer magna elit, eleifend bibendum tincidunt in, tristique eget quam. Maecenas iaculis tempor tortor a venenatis.",
+      },
+    ],
     sourceCodeUrl: "https://github.com/PedroDNBR/The-Tower-Of-Golen",
     downloadUrl: "https://gamejolt.com/games/TheTowerOfGolem/574134",
   },
@@ -48,35 +44,31 @@ export default [
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec.",
     coverImage: whacAMole,
-    get description() {
-      return (
-        <Fragment>
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-            lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris
-            eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer
-            magna elit, eleifend bibendum tincidunt in, tristique eget quam.
-            Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi
-            porttitor diam ultrices malesuada. Phasellus convallis, dolor eget
-            venenatis cursus, turpis erat auctor metus, at tincidunt
-          </p>
-          <p className="paragraph">
-            Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi
-            porttitor diam ultrices malesuada. Phasellus convallis, dolor eget
-            venenatis cursus, turpis erat auctor metus, at tincidunt
-          </p>
-          <Image src={whacAMole} alt={this.title} />
-          <Image src={whacAMole} alt={this.title} />
-          <p className="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-            lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris
-            eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer
-            magna elit, eleifend bibendum tincidunt in, tristique eget quam.
-            Maecenas iaculis tempor tortor a venenatis.
-          </p>
-        </Fragment>
-      );
-    },
+    description: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/uG_hNF3rjnQ?si=DHGV-KHw3lTLFFlO?cc_load_policy=1&cc_lang_pref=en",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer magna elit, eleifend bibendum tincidunt in, tristique eget quam. Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi porttitor diam ultrices malesuada. Phasellus convallis, dolor eget venenatis cursus, turpis erat auctor metus, at tincidunt",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Maecenas iaculis tempor tortor a venenatis. Etiam gravida mi porttitor diam ultrices malesuada. Phasellus convallis, dolor eget venenatis cursus, turpis erat auctor metus, at tincidunt",
+      },
+      {
+        type: "image",
+        src: whacAMole,
+      },
+      {
+        type: "paragraph",
+        content:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec, hendrerit mi. Etiam mauris eros, scelerisque nec facilisis ut, vestibulum sit amet dui. Integer magna elit, eleifend bibendum tincidunt in, tristique eget quam. Maecenas iaculis tempor tortor a venenatis.",
+      },
+    ],
     downloadUrl: "https://gamejolt.com/games/TheTowerOfGolem/574134",
   },
 ] as Project[];

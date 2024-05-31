@@ -1,12 +1,13 @@
 "use client";
 
-import { Project as ProjectType } from "@/types/project";
+import { ProjectDescription, Project as ProjectType } from "@/types/project";
 import Image from "next/image";
-import { FC, memo, useState } from "react";
+import { FC, Fragment, memo, useState } from "react";
 import { RiArrowRightLine, RiCursorLine } from "react-icons/ri";
 import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./Dialog";
 import Button from "./Button";
 import Link from "next/link";
+import slugify from "slugify";
 
 type ProjectProps = ProjectType;
 
@@ -19,6 +20,33 @@ const Project: FC<ProjectProps> = ({
   downloadUrl,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const renderDescription = () => {
+    const renderItem = (item: ProjectDescription) => {
+      switch (item.type) {
+        case "image":
+          return <Image src={item.src} alt={title} />;
+        case "paragraph":
+          return <p className="paragraph">{item.content}</p>;
+        case "video":
+          return (
+            <iframe
+              src={item.src}
+              className="w-full aspect-video"
+              allowFullScreen
+            />
+          );
+        default:
+          return null;
+      }
+    };
+
+    return description.map((item, index) => (
+      <Fragment key={`${slugify(title)}-description-${index}`}>
+        {renderItem(item)}
+      </Fragment>
+    ));
+  };
 
   return (
     <div>
@@ -43,7 +71,7 @@ const Project: FC<ProjectProps> = ({
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
         <DialogContent className="max-h-[75vh] overflow-y-auto">
           <DialogHeader className="text-lg font-bold">{title}</DialogHeader>
-          <div className="flex flex-col gap-6">{description}</div>
+          <div className="flex flex-col gap-6">{renderDescription()}</div>
 
           <DialogFooter>
             {!!sourceCodeUrl && (
