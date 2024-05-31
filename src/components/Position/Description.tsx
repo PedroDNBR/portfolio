@@ -26,9 +26,9 @@ const Description: FC<DescriptionProps> = ({
         </ul>
       </div>
       {!isExpanded && (
-        <a className="link" onClick={() => setIsExpanded(true)}>
+        <span className="link" onClick={() => setIsExpanded(true)}>
           Read more
-        </a>
+        </span>
       )}
     </div>
   );

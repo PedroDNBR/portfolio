@@ -63,9 +63,9 @@ const Project: FC<ProjectProps> = ({
       <div className="flex flex-col gap-2">
         <span className="font-bold text-lg">{title}</span>
         <p className="paragraph line-clamp-3">{excerpt}</p>
-        <a className="link" onClick={() => setIsModalOpen(true)}>
+        <span className="link" onClick={() => setIsModalOpen(true)}>
           Show more
-        </a>
+        </span>
       </div>
 
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
