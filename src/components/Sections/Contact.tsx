@@ -12,7 +12,7 @@ const Contact: FC<ContactProps> = () => {
     <section className="section" id="contact">
       <SectionHeading heading="Let's talk" />
       <p className="paragraph">{config.contact.description}</p>
-      <div className="flex gap-8 items-center">
+      <div className="flex flex-wrap gap-8 items-center">
         <Button asChild endIcon={RiArrowRightLine}>
           <Link href={`mailto:${config.contact.email}`}>{`Let's talk`}</Link>
         </Button>

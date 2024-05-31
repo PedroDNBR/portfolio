@@ -33,6 +33,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
     asChild,
     children,
     variant,
+    className,
     startIcon: StartIcon,
     endIcon: EndIcon,
     ...props
@@ -42,7 +43,11 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
   const Comp = asChild ? Slot : "button";
 
   return (
-    <Comp className={cn(buttonVariants({ variant }))} ref={ref} {...props}>
+    <Comp
+      className={cn(buttonVariants({ variant }), className)}
+      ref={ref}
+      {...props}
+    >
       {!!StartIcon && <StartIcon size={iconSize} />}
       <Slottable>{children}</Slottable>
       {!!EndIcon && <EndIcon size={iconSize} />}

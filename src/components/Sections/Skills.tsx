@@ -10,7 +10,7 @@ const Skills: FC<SkillsProps> = () => {
     <section className="section" id="skills">
       <SectionHeading heading="Skills" />
 
-      <div className="flex gap-32">
+      <div className="flex flex-col gap-8 md:flex-row md:gap-32">
         {config.skills.map((skillSet, index) => (
           <SkillSet key={index} {...skillSet} />
         ))}
