@@ -52,7 +52,7 @@ export default {
       endDate: "Present",
     },
     {
-      company: "Hotels at Home",
+      company: "Tecimob",
       position: "Full-Stack Developer",
       description:
         "Tecimob is a platform offering websites, CRM, and applications aimed at simplifying the daily operations of real estate professionals by focusing on what truly matters: increasing sales and enhancing relationships.",
