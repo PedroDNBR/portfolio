@@ -3,7 +3,7 @@ import { Metadata } from "next";
 const metadata: Metadata = {
   title: "Pedro Gomes Antunes",
   description:
-    "A passionate game developer who loves to design and develop game-focused applications.",
+    "A committed game developer with a passion for conceptualizing and developing game applications.",
 };
 
 export default {

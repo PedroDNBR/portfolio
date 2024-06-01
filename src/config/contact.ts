@@ -1,6 +1,6 @@
 export default {
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec. Fusce quis lacus ultrices, fringilla dolor nec.",
+    "If you like my work or just want to reach out, feel free to drop me a message. I'll do my best to respond promptly!",
   email: "pedrogoantunes@gmail.com",
   socials: [
     {

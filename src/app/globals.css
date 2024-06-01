@@ -21,6 +21,9 @@ body {
   }
   .paragraph {
     @apply leading-7;
+    a {
+      @apply underline;
+    }
   }
   .link {
     @apply text-red-500 hover:underline cursor-pointer leading-7;

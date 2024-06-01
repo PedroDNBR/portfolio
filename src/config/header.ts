@@ -3,5 +3,5 @@ export default {
   /**
    * Don't forget to change src/config/general.ts if you change the title here.
    */
-  title: `A <span class="text-red-500">passionate game developer</span> who loves to design and develop game-focused applications.`,
+  title: `A <span class="text-red-500">committed game developer</span> with a passion for conceptualizing and developing game applications.`,
 } as const;
