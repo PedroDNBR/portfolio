@@ -19,7 +19,7 @@ const Description: FC<DescriptionProps> = ({
     <div>
       <div className={clsx("relative", !isExpanded && "line-clamp-3")}>
         <p className="paragraph">{description}</p>
-        {!isExpanded && (
+        {isExpanded && (
           <ul className="list-none leading-7 mt-4 flex flex-col gap-3">
             {responsabilities.map((responsability, index) => (
               <Responsability key={index}>{responsability}</Responsability>
