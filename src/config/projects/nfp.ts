@@ -13,6 +13,7 @@ import nfpGameplay8 from "../../../public/images/projects/nfp/nfp_gameplay_8.png
 
 export default {
   title: "Multiplayer FPS Prototype",
+  abbreviation: "nfp",
   excerpt:
     "Multiplayer FPS Prototype is inspired by Escape from Tarkov and other hardcore shooters. As it currently lacks many features, it is still in the prototype stage.",
   coverImage: nfpMenu,

@@ -13,6 +13,7 @@ import ttogGameplay8 from "../../../public/images/projects/ttog/ttog_gameplay_8.
 
 export default {
   title: "The Tower of Golem",
+  abbreviation: "ttog",
   excerpt:
     "The Tower of Golem is a game created for the game jam 'game_jaaj5', themed around 'Towers'.",
   coverImage: ttogMenu,

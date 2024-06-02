@@ -2,17 +2,19 @@
 
 import { ProjectDescription, Project as ProjectType } from "@/types/project";
 import Image from "next/image";
-import { FC, Fragment, memo, useState } from "react";
-import { RiArrowRightLine, RiCursorLine } from "react-icons/ri";
-import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./Dialog";
-import Button from "./Button";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import { FC, Fragment, memo, useEffect, useState } from "react";
+import { RiArrowRightLine, RiCursorLine } from "react-icons/ri";
 import slugify from "slugify";
+import Button from "./Button";
+import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./Dialog";
 
 type ProjectProps = ProjectType;
 
 const Project: FC<ProjectProps> = ({
   title,
+  abbreviation,
   excerpt,
   coverImage,
   description,
@@ -20,6 +22,14 @@ const Project: FC<ProjectProps> = ({
   downloadUrl,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const searchParams = useParams<{ slug?: string }>();
+
+  useEffect(() => {
+    if (searchParams.slug === abbreviation) {
+      setIsModalOpen(true);
+    }
+  }, [abbreviation, searchParams.slug]);
 
   const renderDescription = () => {
     const renderItem = (item: ProjectDescription) => {

@@ -13,6 +13,7 @@ import oscGameplay8 from "../../../public/images/projects/osc/osc_gameplay_8.png
 
 export default {
   title: "OnlineShooterCpp",
+  abbreviation: "osc",
   excerpt:
     "OnlineShooterCpp is a game developed through the Unreal Engine 5 C++ Multiplayer Shooter course.",
   coverImage: oscMenu,

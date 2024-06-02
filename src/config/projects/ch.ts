@@ -13,6 +13,7 @@ import chGameplay8 from "../../../public/images/projects/ch/ch_gameplay_8.png";
 
 export default {
   title: "Cedup Hills",
+  abbreviation: "ch",
   excerpt:
     "Cedup Hills is a first-person horror game developed for a school project at CEDUP.",
   coverImage: chMenu,
