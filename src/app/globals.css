@@ -31,4 +31,7 @@ body {
   .muted-link {
     @apply text-zinc-500 font-medium hover:underline;
   }
+  .page-container {
+    @apply max-w-[950px] my-8 md:my-12 px-4 mx-auto;
+  }
 }

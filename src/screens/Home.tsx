@@ -1,4 +1,4 @@
-import { FC, memo } from "react";
+import { FC, Fragment, memo } from "react";
 import About from "@/components/Sections/About";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
@@ -12,7 +12,7 @@ type HomeProps = {};
 
 const Home: FC<HomeProps> = () => {
   return (
-    <div className="max-w-[950px] my-8 md:my-12 px-4 mx-auto">
+    <Fragment>
       <Menu />
       <Header />
 
@@ -25,7 +25,7 @@ const Home: FC<HomeProps> = () => {
       </main>
 
       <Footer />
-    </div>
+    </Fragment>
   );
 };
 

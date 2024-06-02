@@ -1,5 +1,9 @@
 import HomeScreen from "@/screens/Home";
 
 export default function Home() {
-  return <HomeScreen />;
+  return (
+    <div className="page-container">
+      <HomeScreen />
+    </div>
+  );
 }
