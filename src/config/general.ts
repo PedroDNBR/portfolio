@@ -1,8 +1,12 @@
 import { Metadata } from "next";
 
+/**
+ * Prod url. Change if needed.
+ */
 const url = "https://pedrogom.es";
 
 const metadata: Metadata = {
+  metadataBase: new URL(url),
   title: "Pedro Gomes Antunes",
   description:
     "A committed game developer with a passion for conceptualizing and developing game applications.",
