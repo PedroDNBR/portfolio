@@ -3,7 +3,10 @@ import { Metadata } from "next";
 /**
  * Prod url. Change if needed.
  */
-const url = "https://pedrogom.es";
+const url =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3000"
+    : "https://pedrogom.es";
 
 const metadata: Metadata = {
   metadataBase: new URL(url),

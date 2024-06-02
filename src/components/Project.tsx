@@ -3,12 +3,13 @@
 import { ProjectDescription, Project as ProjectType } from "@/types/project";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { FC, Fragment, memo, useEffect, useState } from "react";
 import { RiArrowRightLine, RiCursorLine } from "react-icons/ri";
 import slugify from "slugify";
 import Button from "./Button";
 import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./Dialog";
+import { config } from "@/config";
 
 type ProjectProps = ProjectType;
 
@@ -23,6 +24,7 @@ const Project: FC<ProjectProps> = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const router = useRouter();
   const searchParams = useParams<{ slug?: string }>();
 
   useEffect(() => {
@@ -30,6 +32,18 @@ const Project: FC<ProjectProps> = ({
       setIsModalOpen(true);
     }
   }, [slug, searchParams.slug]);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      window.history.pushState(
+        {},
+        "",
+        new URL(`${config.general.url}/${slug}`)
+      );
+    } else {
+      window.history.pushState({}, "", config.general.url);
+    }
+  }, [isModalOpen, router, slug]);
 
   const renderDescription = () => {
     const renderItem = (item: ProjectDescription) => {
