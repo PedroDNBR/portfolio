@@ -1,9 +1,5 @@
-import HomeScreen from "@/screens/Home";
+import HomeScreen from "@/components/HomeScreen";
 
 export default function Project() {
-  return (
-    <div className="page-container">
-      <HomeScreen />
-    </div>
-  );
+  return <HomeScreen />;
 }

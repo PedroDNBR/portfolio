@@ -1,4 +1,4 @@
-import { FC, Fragment, memo } from "react";
+import { FC, memo } from "react";
 import About from "@/components/Sections/About";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
@@ -8,11 +8,11 @@ import WorkXP from "@/components/Sections/WorkXP";
 import Contact from "@/components/Sections/Contact";
 import Footer from "@/components/Footer";
 
-type HomeProps = {};
+type HomeScreenProps = {};
 
-const Home: FC<HomeProps> = () => {
+const HomeScreen: FC<HomeScreenProps> = () => {
   return (
-    <Fragment>
+    <div className="page-container">
       <Menu />
       <Header />
 
@@ -25,8 +25,8 @@ const Home: FC<HomeProps> = () => {
       </main>
 
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 
-export default memo(Home);
+export default memo(HomeScreen);
