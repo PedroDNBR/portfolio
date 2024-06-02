@@ -13,7 +13,7 @@ import wcGameplay8 from "../../../public/images/projects/wc/wc_gameplay_8.png";
 
 export default {
   title: "Wain's Cat",
-  abbreviation: "wc",
+  slug: "wc",
   excerpt:
     "Wain's Cat is a first-person horror game developed as a final project for the CEDUP IT course in 2019.",
   coverImage: wcMenu,

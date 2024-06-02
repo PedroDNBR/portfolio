@@ -14,7 +14,7 @@ type ProjectProps = ProjectType;
 
 const Project: FC<ProjectProps> = ({
   title,
-  abbreviation,
+  slug,
   excerpt,
   coverImage,
   description,
@@ -26,10 +26,10 @@ const Project: FC<ProjectProps> = ({
   const searchParams = useParams<{ slug?: string }>();
 
   useEffect(() => {
-    if (searchParams.slug === abbreviation) {
+    if (searchParams.slug === slug) {
       setIsModalOpen(true);
     }
-  }, [abbreviation, searchParams.slug]);
+  }, [slug, searchParams.slug]);
 
   const renderDescription = () => {
     const renderItem = (item: ProjectDescription) => {

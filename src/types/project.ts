@@ -8,7 +8,7 @@ export type ProjectDescription = Image | Paragraph | Video;
 
 export type Project = {
   title: string;
-  abbreviation: string;
+  slug: string;
   excerpt: string;
   coverImage: StaticImageData;
   description: ProjectDescription[];
