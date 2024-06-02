@@ -25,7 +25,7 @@ export default {
         "GameMaker",
         "Photoshop",
       ],
-      startDate: "Jun 2023",
+      startDate: "Jun 2016",
       endDate: "Present",
     },
     {
