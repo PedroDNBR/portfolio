@@ -13,6 +13,7 @@ import wamGameplay8 from "../../../public/images/projects/wam/wam_gameplay_8.png
 
 export default {
   title: "Whac a Mole",
+  abbreviation: "wam",
   excerpt:
     "Whack a Mole is an arcade-style game created as a test for a job application at SENAI.",
   coverImage: wamMenu,
