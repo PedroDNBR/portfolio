@@ -34,11 +34,7 @@ export default {
     },
     {
       type: "paragraph",
-      content: "",
-    },
-    {
-      type: "paragraph",
-      content: "You can found more details in the video bellow:",
+      content: "You can find more details in the video bellow:",
     },
     {
       type: "video",
