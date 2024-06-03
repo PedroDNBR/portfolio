@@ -10,6 +10,7 @@ import slugify from "slugify";
 import Button from "./Button";
 import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./Dialog";
 import { config } from "@/config";
+import { getPageTitle } from "@/utils/getPageTitle";
 
 type ProjectProps = ProjectType;
 
@@ -43,7 +44,9 @@ const Project: FC<ProjectProps> = ({
     } else {
       window.history.pushState({}, "", config.general.url);
     }
-  }, [isModalOpen, router, slug]);
+
+    document.title = getPageTitle(isModalOpen ? title : undefined);
+  }, [isModalOpen, router, slug, title]);
 
   const renderDescription = () => {
     const renderItem = (item: ProjectDescription) => {

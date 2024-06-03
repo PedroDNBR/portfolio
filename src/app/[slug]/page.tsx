@@ -1,5 +1,6 @@
 import { config } from "@/config";
 import HomeScreen from "@/screens/HomeScreen";
+import { getPageTitle } from "@/utils/getPageTitle";
 import { Metadata } from "next";
 
 type ProjectPageProps = {
@@ -19,7 +20,7 @@ export async function generateMetadata({
 
   if (!project) return config.general.metadata;
 
-  const title = `${project.title} - ${config.general.metadata.title}`;
+  const title = getPageTitle(project.title);
   return {
     ...config.general.metadata,
     title,
