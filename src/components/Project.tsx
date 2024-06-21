@@ -11,6 +11,7 @@ import Button from "./Button";
 import { Dialog, DialogContent, DialogFooter, DialogHeader } from "./Dialog";
 import { config } from "@/config";
 import { getPageTitle } from "@/utils/getPageTitle";
+import clsx from "clsx";
 
 type ProjectProps = ProjectType;
 
@@ -22,6 +23,7 @@ const Project: FC<ProjectProps> = ({
   description,
   sourceCodeUrl,
   downloadUrl,
+  hidden,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -81,7 +83,7 @@ const Project: FC<ProjectProps> = ({
   };
 
   return (
-    <div>
+    <div className={clsx(hidden && "hidden")}>
       <div
         className="group mb-4 relative overflow-hidden rounded"
         onClick={() => setIsModalOpen(true)}

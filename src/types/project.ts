@@ -14,4 +14,5 @@ export type Project = {
   description: ProjectDescription[];
   sourceCodeUrl?: string;
   downloadUrl?: string;
+  hidden?: boolean;
 };
