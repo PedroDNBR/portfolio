@@ -50,5 +50,5 @@ export default {
     { type: "image", src: wcGameplay7 },
     { type: "image", src: wcGameplay8 },
   ],
-  downloadUrl: "https://linktr.ee/whac_a_mole",
+  downloadUrl: "https://drive.google.com/file/d/1p1NE7F4hWBmqBtsyaqa1qhLAX95C1Cz8/view?usp=sharing",
 } as Project;
