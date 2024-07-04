@@ -49,7 +49,7 @@ export default {
         "AWS Lambda",
       ],
       startDate: "Jun 2023",
-      endDate: "Present",
+      endDate: "Jul 2023",
     },
     {
       company: "Tecimob",
