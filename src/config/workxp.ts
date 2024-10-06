@@ -4,6 +4,25 @@ export default {
   maxSkillsToShow: 5,
   positions: [
     {
+      company: "SENAI Soluções Digitais",
+      position: "Unity Developer",
+      description:
+        "SENAI Digital Solutions aims to support small, medium, and large companies in staying technologically up to date and strengthening their presence in national and international markets by offering customized systems in various programming languages.",
+      responsabilities: [
+        "Develop 3D applications, games, and simulators for Mobile, Desktop, VR, AR, and Mixed Reality platforms.",
+        "Utilize Unity and C# for the creation and implementation of projects.",
+        "Collaborate with the 3D Modeling and Animation team to ensure seamless integration of assets.",
+        "Provide technical support using Blender for 3D modeling and animation tasks.",
+      ],
+      skills: [
+        "C#",
+        "Unity",
+        "Blender",
+      ],
+      startDate: "Jun 2023",
+      endDate: "Jul 2023",
+    },
+    {
       company: "Independent Game Developer",
       position: "Game Developer",
       description:
