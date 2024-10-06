@@ -19,8 +19,8 @@ export default {
         "Unity",
         "Blender",
       ],
-      startDate: "Jun 2023",
-      endDate: "Jul 2023",
+      startDate: "Aug 2024",
+      endDate: "Present",
     },
     {
       company: "Independent Game Developer",
@@ -68,7 +68,7 @@ export default {
         "AWS Lambda",
       ],
       startDate: "Jun 2023",
-      endDate: "Jul 2023",
+      endDate: "Jul 2024",
     },
     {
       company: "Tecimob",
