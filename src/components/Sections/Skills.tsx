@@ -15,8 +15,6 @@ const Skills: FC<SkillsProps> = () => {
           <SkillSet key={index} {...skillSet} />
         ))}
       </div>
-
-      <p className="font-bold">And anything else you throw at my hands</p>
     </section>
   );
 };
